@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: #3A435E;
 }
 body {
     display: flex;
@@ -18,7 +19,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 400px;
+    width: 350px;
     padding: 50px 40px;
     background-color: #FFFFFF;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
@@ -51,10 +52,10 @@ main::after {
 
 .header {
     position: relative;
-    height: 150px;
+    height: 120px;
 
     animation-name: rotate;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-fill-mode: both;
@@ -62,12 +63,12 @@ main::after {
 
 .ring {
     position: absolute;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 5000rem;
 
-    margin-right: -50%;
-    transform: translateX(50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
 
     border: 2px solid #C4CADE;;
 }
@@ -75,36 +76,36 @@ main::after {
 .img {
     position: absolute;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 400px;
-    border: 8px solid #C4CADE;
+    border: 5px solid #C4CADE;
     background-color: white;
 }
 
 .img:nth-child(1) {
-    left: calc(25% - 25px);
+    left: calc(25% - 15px);
     top: 25px;
 }
 
 .img:nth-child(2) {
-    left: calc(50% - 30px);
+    left: calc(50% - 25px);
     margin-top: -20px;
 }
 
 .img:nth-child(3) {
-    left: calc(75% - 45px);
+    left: calc(75% - 40px);
     top: 25px;
 }
 
 .img:nth-child(4) {
-    left: calc(30% - 20px);
-    bottom: -10px;
+    left: calc(32%);
+    bottom: -15px;
 }
 
 .img:nth-child(5) {
-    left: calc(70% - 50px);
-    bottom: -10px;
+    left: calc(70% - 45px);
+    bottom: -15px;
 }
 
 .body {
@@ -115,8 +116,9 @@ h1 {
     font-size: 18px;
 }
 p {
-    padding-top: 20px;
-    line-height: 24px;
+    padding-top: 10px;
+    line-height: 22px;
+    opacity: .8;
 }
 
 button {
